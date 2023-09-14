@@ -6,7 +6,6 @@ class Lex(Lexer):
     ignore_comment='\#'
     INTEGER=r'[0-9]+'
     ID=r'[a-zA-Z]+'
-    ID['if']=IF
     NEWLINE=r'\n'
     def INTEGER(self,t):
         t.value=int(t.value)
